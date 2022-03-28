@@ -5,10 +5,11 @@ import Navbar from './companents/Navbar';
 
 function App() {
   return ( 
-    <>
-
- <Navbar />
- </>
+    <div className='container-fl'>
+    
+    <Navbar />
+  
+    </div>
   );
 }
 
