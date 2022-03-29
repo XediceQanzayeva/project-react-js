@@ -34,6 +34,58 @@ nav ul li {
 .navbar-nav > li > a:focus{
     border-bottom: 0.1875rem solid var(--primary-orange);
 }
+/*  Header ucun css kodlari */ 
 
+.header-wrapper {
+    position: relative;
+background: url(./background.jpg);
+background-size: cover; 
+height: 510px;
+background-position: center;
 
+} 
 
+.main-info {
+    position: absolute;
+    top:-80px; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+
+}
+
+.typed-text{
+color: var(--primary-White);
+margin-bottom: 20px;
+font-size: 1.3rem;
+}
+
+.main-info h1 {
+    color: var(--primary-orange);
+    /* margin-bottom: 25px; */
+}
+@media (max-width:768px) {
+    .main-info h1 {
+        font-size: 1.7rem !important;
+    }
+
+}
+.downloadcv {
+    border: 1px solid var(--primary-dark-grey);
+    padding: 0.20rem;
+    color:#000;
+    border-radius: 4px;
+    text-transform: uppercase;
+     margin-bottom: 20px;
+}
+.downloadcv:hover {
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    color: var(--primary-White);
+    transition: .4s ease-in-out;
+}
