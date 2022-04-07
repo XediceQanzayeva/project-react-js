@@ -5,14 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Navbar from './companents/Navbar';
 import Header from './companents/Header';
+import AboutMe from './companents/AboutMe';
+import ContactUs from './companents/ContactUs';
+
 
 function App() {
   return ( 
-    <div className='container-fluid'>
+    <div className='container-fluid'> 
     
-    <Navbar />
+    <Navbar /> 
   <Header/>
-  
+  <AboutMe/>
+  <ContactUs/>
     </div>
   );
 }

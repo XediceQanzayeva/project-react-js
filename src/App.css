@@ -1,91 +1,242 @@
 /* Navbarin kodlari */
+
 :root {
-    --primary-White:#fff;
-   --primary-light-grey: #f4f4f4;
-   --primary-grey:#ccd1d9;
-   --primary-dark-grey:#666;
-   --primary-orange:#f9ab00;
-   --primary-dark:rgb(52,58,64);
-   --primary-red :#ef4035;
-   --primary-hover-red :#f33501;
-   -primary-black:#000;
-    --primary-transparent-black:rgb(0,0,0,0.7);
-    --primary-green:rgba(0,255,0);
+    --primary-White: #fff;
+    --primary-light-grey: #f4f4f4;
+    --primary-grey: #ccd1d9;
+    --primary-dark-grey: #666;
+    --primary-orange: #f9ab00;
+    --primary-dark: rgb(52, 58, 64);
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
+    -primary-black: #000;
+    --primary-transparent-black: rgb(0, 0, 0, 0.7);
+    --primary-green: rgba(0, 255, 0);
 
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap');
+
 .logo {
-    width: 14rem; 
-  color: var(--primary-White);
+    width: 14rem;
+    color: var(--primary-White);
 }
 
 nav a.nav-link {
     font-size: 1.2rem;
     letter-spacing: 0.0375;
     margin: 0 0.75rem;
-    color: var(--primary-White) !important ; 
+    color: var(--primary-White) !important;
+
 }
+
 nav ul li {
     text-transform: uppercase;
- 
+    padding: 0;
+
 }
-.navbar-nav > li > a.active,
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus{
+
+.icon {
+
+    background: transparent;
+    border: none;
+    outline: none;
+    display: none;
+    font-size: 36px;
+}
+
+.fa-bars {
+    background: transparent !important;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
     border-bottom: 0.1875rem solid var(--primary-orange);
+
+
 }
-/*  Header ucun css kodlari */ 
+
+
+nav {
+    z-index: 999;
+    user-select: none;
+
+}
+
+@media(max-whidt:990px) {
+    .icon {
+        display: block;
+    }
+}
+
+
+/*  Header ucun css kodlari */
 
 .header-wrapper {
     position: relative;
-background: url(./background.jpg);
-background-size: cover; 
-height: 510px;
-background-position: center;
-
-} 
+    background: url(./background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    user-select: none;
+}
 
 .main-info {
     position: absolute;
-    top:-80px; 
+    top: -80px;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
 
 }
 
-.typed-text{
-color: var(--primary-White);
-margin-bottom: 20px;
-font-size: 1.3rem;
+.typed-text {
+    color: var(--primary-White);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .main-info h1 {
     color: var(--primary-orange);
     /* margin-bottom: 25px; */
+
 }
+
 @media (max-width:768px) {
     .main-info h1 {
         font-size: 1.7rem !important;
     }
 
 }
+
 .downloadcv {
     border: 1px solid var(--primary-dark-grey);
     padding: 0.20rem;
-    color:#000;
+    color: #000;
     border-radius: 4px;
     text-transform: uppercase;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
+    transition: .4s ease-in-out;
 }
+
 .downloadcv:hover {
     text-decoration: none;
     background-color: var(--primary-hover-red);
     color: var(--primary-White);
-    transition: .4s ease-in-out;
+
+}
+
+/* AboutMe companenti stilleri */
+
+.photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--primary-orange);
+    padding: .3rem;
+}
+
+.about-heading {
+    color: var(--primary-orange);
+    text-transform: uppercase;
+}
+
+@media(max-width:768px) {
+    .about-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .p-text {
+        text-align: justify; 
+    }
+}
+
+.p-text {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing:1.5px ;
+
+}
+
+/* Contact Us companenti stilleri */
+.contacts {
+    background-color: var(--primary-dark);
+    padding: 3rem 0;
+    user-select: none;
+}
+
+.contacts h1 {
+    color: var(--primary-hover-red);
+    padding-left: 1.3rem 0;
+    text-transform: uppercase;
+}
+
+
+.contacts p {
+    color: var(--primary-light-grey);
+    font-size: 1.2rem;
+}
+
+
+/* contacts input */
+
+.contacts input,
+.contacts textarea {
+    background: none;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    color: var(--primary-light-grey) !important;
+    outline: none !important;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+    background: transparent;
+    border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+    height: 12.2rem !important;
+}
+
+.btn {
+    margin: 1rem 0 0 0;
+    transition: .4s ease-in-out !important;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark-grey) !important;
+
+}
+
+.line {
+    position: relative;
+    top: -0.7rem;
+    height: 0.125rem;
+    background-color: var(--primary-orange);
+    display: inline-block;
+
+}
+
+input:focus+.line,
+textarea:focus+.line {
+    width: 100%;
+    transition: width .5s ease-in-out;
 }

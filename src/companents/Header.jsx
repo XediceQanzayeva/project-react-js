@@ -1,5 +1,5 @@
-import React from 'react'
-import Typed from 'react-typed';
+
+import Typed from 'react-typed'; 
 import shekil from '../background.jpg' 
 
 const header = () => {
@@ -8,7 +8,7 @@ const header = () => {
         <div className="main-info">
             <h1>Web development and website services</h1> 
 
-            <Typed className='typed-text'
+            <Typed className='typed-text' 
                 strings={[
                     'Xedice Qanzayeva',
                     'Azerbaycan Texnologiya Universiteti',
@@ -16,6 +16,7 @@ const header = () => {
                     typeSpeed={40}
                     backSpeed={50}
                   loop >
+                    {/* props adlanirlar */}
                     
                 </Typed>
                 <a href={shekil} className="downloadcv" download>Download CV</a>
