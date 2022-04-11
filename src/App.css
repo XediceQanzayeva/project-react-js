@@ -16,7 +16,11 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@600&display=swap');
+* {
+    box-sizing: border-box !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Peddana&display=swap');
 
 .logo {
     width: 14rem;
@@ -63,7 +67,7 @@ nav ul li {
 
 
 nav {
-    z-index: 999;
+    z-index: 999; 
     user-select: none;
 
 }
@@ -79,7 +83,7 @@ nav {
 
 .header-wrapper {
     position: relative;
-    background: url(./background.jpg);
+    background: url(./background2.png);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -103,8 +107,9 @@ nav {
 .typed-text {
     color: var(--primary-White);
     margin-bottom: 20px;
-    font-size: 1.3rem;
-    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+
+    font-family: 'Peddana', serif;
 }
 
 .main-info h1 {
@@ -163,14 +168,15 @@ nav {
         text-align: center;
         margin-bottom: 20px;
     }
+
     .p-text {
-        text-align: justify; 
+        text-align: justify;
     }
 }
 
 .p-text {
     font-family: 'Indie Flower', cursive;
-    letter-spacing:1.5px ;
+    letter-spacing: 1.5px;
 
 }
 
@@ -239,4 +245,67 @@ input:focus+.line,
 textarea:focus+.line {
     width: 100%;
     transition: width .5s ease-in-out;
+}
+
+/*  Services companenti stilleri  */
+
+.services {
+    text-align: center;
+    background-color: var(--primary-light-grey);
+    padding-bottom: 2rem;
+}
+
+.services h1 {
+    text-transform: uppercase;
+}
+
+.services .circle {
+    position: relative;
+    margin: 0.0375rem auto;
+    background-color: var(--primary-orange);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+
+}
+
+.services .circle .icon {
+    position: absolute;
+    font-size: 1.4rem;
+    color: var(--primary-White);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.services .box {
+    background: var(--primary-White);
+    border-bottom: 0.3125rem solid var(--primary-orange);
+    padding: 0.625rem;
+    margin-bottom: 1.875rem;
+    height: 350px;
+    transition: all .7s ease-in-out;
+
+}
+
+.services .box:hover {
+    background: var(--primary-orange);
+    border-bottom: 0.3125rem solid var(--primary-dark);
+    cursor: pointer; 
+}
+
+.services .box:hover .icon {
+    color: var(--primary-dark);
+}
+
+.services .box:hover .circle {
+    background: var(--primary-White);
+}
+.services .box:hover p {
+    color: var(--primary-White);
+}
+.box h2 {
+    margin-top: 1.2rem;
 }

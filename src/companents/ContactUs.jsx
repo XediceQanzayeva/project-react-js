@@ -2,12 +2,12 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
-    
+
 
     const form = useRef();
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault();  
 
         const serviceID = 'service_tzbdjo6'
         const templateID = 'template_nntitaf'
@@ -15,11 +15,11 @@ const ContactUs = () => {
 
         emailjs.sendForm(serviceID, templateID, form.current, userID)
             .then((result) => {
-                console.log(result.text);
+                console.log(result.text); 
             }, (error) => {
                 console.log(error.text);
             });
-            form.current.reset()
+        form.current.reset()
     };
 
     return (

@@ -1,6 +1,6 @@
 
 import Typed from 'react-typed'; 
-import shekil from '../background.jpg' 
+import shekil from '../background2.png'
 
 const header = () => {
   return (
