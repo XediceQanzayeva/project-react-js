@@ -3,7 +3,7 @@ import React from 'react'
 const AboutMe = () => { 
     return (
         <div className='container py-5'>
-            <div className="row">
+            <div className="row"> 
                 <div className="col-lg-6 col-xm-12"> 
                     <div className="photo-wrap mb-5">
                         <img className='profile-img' src="https://source.unsplash.com/random" alt="profile" /> 

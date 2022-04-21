@@ -27,6 +27,7 @@
     color: var(--primary-White);
 }
 
+
 nav a.nav-link {
     font-size: 1.2rem;
     letter-spacing: 0.0375;
@@ -37,7 +38,7 @@ nav a.nav-link {
 
 nav ul li {
     text-transform: uppercase;
-    padding: 0;
+
 
 }
 
@@ -67,7 +68,7 @@ nav ul li {
 
 
 nav {
-    z-index: 999; 
+    z-index: 999;
     user-select: none;
 
 }
@@ -238,7 +239,7 @@ nav {
     height: 0.125rem;
     background-color: var(--primary-orange);
     display: inline-block;
-
+    width: 0;
 }
 
 input:focus+.line,
@@ -269,7 +270,7 @@ textarea:focus+.line {
 
 }
 
-.services .circle .icon {
+.s-icon {
     position: absolute;
     font-size: 1.4rem;
     color: var(--primary-White);
@@ -286,26 +287,180 @@ textarea:focus+.line {
     padding: 0.625rem;
     margin-bottom: 1.875rem;
     height: 350px;
-    transition: all .7s ease-in-out;
+
+
 
 }
+
 
 .services .box:hover {
     background: var(--primary-orange);
     border-bottom: 0.3125rem solid var(--primary-dark);
-    cursor: pointer; 
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
 }
 
-.services .box:hover .icon {
-    color: var(--primary-dark);
-}
+
 
 .services .box:hover .circle {
     background: var(--primary-White);
 }
+
 .services .box:hover p {
     color: var(--primary-White);
+
 }
+
 .box h2 {
     margin-top: 1.2rem;
+}
+
+/* flip card stilleri */
+
+.box {
+
+    transform-style: preserve-3d;
+    transition: all .6s ease-in-out;
+
+}
+
+.box:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front {
+
+    backface-visibility: hidden;
+
+}
+
+.card-back {
+
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+
+
+/* Experience copmanenti stilleri */
+
+
+.experience {
+    padding: .7rem;
+}
+
+.experience-wrapper {
+    padding: 3.2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience h1 {
+    text-transform: uppercase;
+    color: var(--primary-orange);
+}
+
+.experience-wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: '';
+    width: 0.125rem;
+    height: 100%;
+    background-color: var(--primary-grey);
+    z-index: 1;
+    margin-left: -0.125rem;
+}
+
+.timeline-block {
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+    width: calc(50% + .5rem);
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+.marker {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--primary-orange);
+    border: 0.3125rem solid var(--primary-dark);
+    border-radius: 50%;
+    z-index: 3;
+    margin-top: 0.625rem;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 0.9375rem;
+    color: var(--primary-dark-grey);
+
+}
+
+@media(max-width:765px) {
+    .experience .container {
+        padding-left: 0;
+    }
+
+    .experience-wrapper::before {
+        left: 0.5rem;
+        margin-bottom: 1.875rem;
+    }
+
+    .timeline-block-right {
+        float: none;
+        width: 100%;
+
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+        width: 100%;
+    }
+}
+
+/* Footer stilleri */
+
+.container-F {
+    background-color: var(--primary-light-grey);
+    border-radius: 25px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.container-F p {
+    color: var(--primary-orange);
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.fa-solid {
+    margin: 15px;
+    color: var(--primary-dark);
+}
+
+a {
+    color: black !important;
+
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+footer {
+    text-align: center;
+    font-size: 20px;
 }

@@ -5,58 +5,87 @@ import { faDesktop, faFileCod, faFileCode } from '@fortawesome/free-solid-svg-ic
 
 const Services = () => {
   return (
-    <div className='services'>
-      <h1 className='py-5'>Our services</h1>
+
+    <div className="services">
+      <h1 className="py-5">OUR SERVICES</h1>
       <div className="container">
         <div className="row">
-          {/* google SEO xidmetleri */}
+         
 
-          <div className='col-lg-3 col-md-6 col-sm-6'>
+          {/* Google */}
+          <div className="col-lg-3 col-md-6 col-sn-6">
             <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon icon={faGoogle} size="2x" className="icon" />
+              <div className="card-front">
+                <div className="circle">
+                  <FontAwesomeIcon icon={faGoogle} className="s-icon" />
+                </div>
+                <h2>SEO</h2>
               </div>
-              <h2>SEO</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, esse?</p>
+              <div className="card-back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio at voluptatum maxime optio dolorum non, accusantium veniam. Officiis culpa cumque beatae repudiandae eligendi libero consequatur, quis numquam ipsam laborum.</p>
+              </div>
+
             </div>
           </div>
 
-          {/* veb  developmentle elaqeli sahe */}
-
-          <div className='col-lg-3 col-md-6 col-sm-6'>
+          {/* web development */}
+          <div className="col-lg-3 col-md-6 col-sn-6">
             <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon icon={faFileCode} className="icon" />
+              <div className="card-front">
+                <div className="circle">
+                  <FontAwesomeIcon icon={faFileCode} className="s-icon" />
+                </div>
+                <h2>Web developer</h2>
               </div>
-              <h2>Web developmet</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, esse?</p>
-            </div>
-          </div>
-          {/* Facebook marketing  */}
+              <div className="card-back">
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum esse hic autem voluptate. Distinctio, officia. Labore, saepe! Itaque dolores impedit, quos, eligendi, mollitia sequi ut nam id beatae  molestiae!</p>
+              </div>
 
-          <div className='col-lg-3 col-md-6 col-sm-6'>
-            <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon icon={faFacebookF} className="icon" />
-              </div>
-              <h2>Facebook SMM</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, esse?</p>
             </div>
           </div>
 
-          {/*IT ishleri  */}
-          <div className='col-lg-3 col-md-6 col-sm-6'>
+          {/* Facebook Marketing */}
+          <div className="col-lg-3 col-md-6 col-sn-6">
             <div className="box">
-              <div className="circle">
-                <FontAwesomeIcon icon={faDesktop}   className="icon" />
+              <div className="card-front">
+                <div className="circle">
+                  <FontAwesomeIcon icon={faFacebookF} className="s-icon" />
+                </div>
+                <h2>Facebook SMM</h2>
               </div>
-              <h2>IT helpdesk</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, esse?</p>
+              <div className="card-back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio at voluptatum maxime optio dolorum non, accusantium veniam. Officiis culpa cumque beatae , quis numquam ipsam laborum.</p>
+              </div>
+
             </div>
           </div>
+
+          {/* IT */}
+          <div className="col-lg-3 col-md-6 col-sn-6">
+            <div className="box">
+              <div className="card-front">
+                <div className="circle">
+                  <FontAwesomeIcon icon={faDesktop} className="s-icon" />
+                </div>
+                <h2>IT helpdesk</h2>
+              </div>
+              <div className="card-back">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio at voluptatum maxime optio dolorum non, accusantium veniam. Officiis culpa cumque beatae repudiandae eligendi  consequatur, quis numquam ipsam laborum.</p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
         </div>
       </div>
+
     </div>
+
   )
 }
 
